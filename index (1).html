@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Имя Фамилия] — Junior Java-разработчик</title>
+<meta name="description" content="Резюме и проекты Junior Java-разработчика из Астаны">
+<style>
+  :root {
+    --bg: #f5f7fa; --ink: #14213d; --muted: #5a6478; --line: #d5dbe6; --accent: #1d4ed8; --panel: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e1424; --ink: #e8ecf5; --muted: #98a2b8; --line: #27304a; --accent: #7aa2ff; --panel: #151c30; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  header h1 { font: 700 clamp(2.2rem, 7vw, 3.4rem)/1.05 Georgia, "Times New Roman", serif; margin: 0 0 12px; letter-spacing: -0.02em; }
+  header p { margin: 0 0 20px; color: var(--muted); max-width: 52ch; }
+  nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 0; margin: 0; }
+  section { margin-top: 56px; }
+  h2 { font: 700 1.3rem/1.2 Georgia, serif; margin: 0 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+  .project { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .project:last-child { border-bottom: 0; }
+  .project h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .project p { margin: 0 0 10px; color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0 0 10px; list-style: none; }
+  .tags li { font-size: .85rem; border: 1px solid var(--line); background: var(--panel); border-radius: 4px; padding: 1px 8px; }
+  dl { margin: 0; display: grid; grid-template-columns: 9rem 1fr; gap: 10px 16px; }
+  dt { color: var(--muted); } dd { margin: 0; }
+  @media (max-width: 520px) { dl { grid-template-columns: 1fr; gap: 0; } dd { margin-bottom: 12px; } }
+  footer { margin-top: 64px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>[Имя Фамилия]</h1>
+    <p>Junior Java-разработчик из Астаны. Пишу backend-приложения на Java и ищу стажировку, где можно расти в команде.</p>
+    <nav aria-label="Разделы"><ul>
+      <li><a href="#projects">Проекты</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#education">Образование</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul></nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Проекты</h2>
+
+      <article class="project">
+        <h3><a href="https://github.com/Kakds/Hotel-Reservation-System">Hotel Reservation System</a></h3>
+        <p>Система бронирования отелей. [Опишите 1–2 предложениями, что она умеет: поиск номеров, бронь, отмена, хранение данных.]</p>
+        <ul class="tags"><li>Java</li><li>ООП</li></ul>
+      </article>
+
+      <article class="project">
+        <h3><a href="https://github.com/Kakds/hotelapi">Hotel API</a></h3>
+        <p>API для работы с данными отеля. [Укажите эндпоинты и фреймворк, если использовали.]</p>
+        <ul class="tags"><li>Java</li><li>REST</li></ul>
+      </article>
+
+      <article class="project">
+        <h3>Алгоритмы и структуры данных</h3>
+        <p>Учебные задания: рекурсия и реализация структур данных. [Укажите, что именно реализовали.]</p>
+        <ul class="tags"><li>Java</li><li>Алгоритмы</li></ul>
+        <a href="https://github.com/Kakds/assignment1-recursion">Рекурсия</a> ·
+        <a href="https://github.com/Kakds/assignment-2-ads">ADS 2</a> ·
+        <a href="https://github.com/Kakds/assignment-3_ads">ADS 3</a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Навыки</h2>
+      <dl>
+        <dt>Языки</dt><dd>Java [SQL, другие]</dd>
+        <dt>Основы</dt><dd>ООП, алгоритмы и структуры данных, рекурсия</dd>
+        <dt>Инструменты</dt><dd>Git, GitHub, IntelliJ IDEA [Maven/Gradle, Postman]</dd>
+        <dt>Языки общения</dt><dd>Русский [уровень], казахский [уровень], английский [уровень]</dd>
+      </dl>
+    </section>
+
+    <section id="education">
+      <h2>Образование</h2>
+      <dl>
+        <dt>[Годы]</dt><dd>[Университет], [специальность]</dd>
+      </dl>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:you@example.com">[you@example.com]</a></dd>
+        <dt>Telegram</dt><dd><a href="https://t.me/username">[@username]</a></dd>
+        <dt>GitHub</dt><dd><a href="https://github.com/kaisarars">github.com/kaisarars</a></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>Астана, Казахстан</footer>
+</div>
+</body>
+</html>
